@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Pacifico&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Root */
+:root{
+    --primaryColor: #698f3f;
+    --secondaryColor: grey;
+    --mainTransition: all 0.2s ease-in-out;
+    --letterSpacing: 1.5rem;
+    --primaryFont:'Catamaran', sans-serif;
+    --secondaryFont:'Pacifico', cursive;
+}
+
+body{
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Helper/Utility Classes */
+a{
+    text-decoration: none;
+}
+
+#menu{
+    transition: var(--mainTransition);
+    animation: menu-animation 2s infinite linear forwards;
+    
+}
+/* Menu Animation */
+@keyframes menu-animation {
+    0%{
+        transform:scale(0.5);
+    }
+    50%{
+        transform:scale(0.7);
+    }
+    100%{
+        transform: scale(0.5);
+    }
+}
+/* Helper/Utility Classes End */
+
+/* Header */
+.header{
+    min-height: 100vh;
+    background:linear-gradient(to top, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.4)), url('/main.jpeg') center/cover no-repeat fixed;
+    position: relative;
+}
+
+
+/* Banner */
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.flavour-text{
+    color: var(--primaryColor);
+    text-transform: lowercase;
+    font-family: var(--secondaryFont);
+    /* animation */
+    transition: var(--mainTransition);
+    animation: flavour-text-animation 2s 1 ease-in-out forwards;
+}
+
+@keyframes flavour-text-animation{
+    0%{
+       transform: translateX(1000px);
+    }
+    20%{
+        transform: translateX(-300px);
+    }
+    40%{
+        transform: translateX(100px);
+    }
+    60%{
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(50px);
+    }
+}
+.crafted-text{
+    color: white;
+    font-family: var(--primaryFont);
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin: 20px;
+    /* animation */
+    animation: crafted-text-animation 2s 1 ease-in-out forwards;
+}
+
+@keyframes crafted-text-animation{
+    0%{
+       transform: translateX(-1000px);
+    }
+    20%{
+        transform: translateX(300px);
+    }
+    40%{
+        transform: translateX(-100px);
+    }
+    60%{
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-50px);
+    }
+}
+
+.explore-btn-link{
+    background: var(--primaryColor);
+    border: 10px solid var(--primaryColor);
+    outline: 3px solid var(--primaryColor);
+    outline-offset: 5px;
+    color:saddlebrown;
+    letter-spacing: 0.5rem;
+    line-height: 100px;
+    transition: var(--mainTransition);
+}
+
+.explore-btn-link:hover{
+    color: white;
+    padding: 5px;
+}
+/* Banner End */
+/* Header End */
+
+
+/* Header-Content Divider */
+.content-divider{
+    height: 6px;
+    background: linear-gradient(to right,var(--primaryColor),orange,brown, orange ,var(--primaryColor))
+}
+
+/* Header-Content Divider End
+
+/*Content */
+
+
+article{
+    float: left;
+    width: 25%;
+    height: 200px;
+    text-align: center;
+    background: darkgray;
+}
+
+.heading{
+    font-family: var(--primaryFont);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-top: 20px;
+    color: var(--primaryColor);
+}
+
+.paragraph{
+    margin: 10px auto;
+    font-size: 95%;
+    max-width: 13rem;
+}
+
+.fas{
+    margin-top: 30px;
+    font-size: 200%;
+    transition: var(--mainTransition);
+}
+
+article:hover{
+    background: var(--primaryColor);
+}
+article:hover .heading{
+    color: whitesmoke;
+}
+
+article:hover .fas{
+    transform: translateY(-5px) scale(1.3);
+}
+
+/* Media Screen Changes */
+@media screen and (max-width: 1080px){
+    .header{
+        min-height: 120vh;
+    }
+    article{
+        float: left;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 720px){
+    article{
+        float:left;
+        width: 100%;
+    }
+}
+/* Medi Screen Changes End */
+/* Content End */
+/* Global */
