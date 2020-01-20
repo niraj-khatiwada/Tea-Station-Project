@@ -465,40 +465,61 @@ divx > h4{
 .cards{
     margin: 2rem 7rem 5rem 7rem;
     width: 90vw;
+    
 }
 
 .card-items{
     float: left;
     margin: 5rem 3rem;
-    width: 24vw;
-    height: 60vh;
-    outline: 5px solid var(--primaryColor);
-    outline-offset: 0.3rem;
+    width: 25%;
+    border: 3px solid var(--primaryColor);
+    padding: 5px;
     -moz-outline-radius: 1rem;
     border-radius: 1rem;
     overflow: hidden;
+    -webkit-box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.75);
+    
     
 }
 
+.card-border{
+    border-radius: 1rem;
+    overflow: hidden;
+}
 .tea-image{
     height: 50%;
+    background: var(--primaryColor);
+    position: relative;
 }
 
 .tea-image > img{
-    width:24vw ;
+    width:100% ;
+    
+    
 }
 
 .icon{
-    text-align: center;
-    background: red;
+    position: absolute;
+    background: orange;
+    bottom: 0;
+    right: 40%;
+    transform: translateY(40%);
+    font-size: 120%;
+    padding: 0 20px 20px 20px;
     border-radius: 100%;
-}
+    border: 3px solid var(--primaryColor);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 
+}
 .captions{
     background: var(--primaryColor);
     height: 50%;
     text-align: center;
-    padding-top: 7rem;
+    padding: 3rem;
 }
 
 .captions > p{
@@ -592,6 +613,10 @@ footer{
         width:50%;
         padding:0;
     }
+    .card-items{
+        float:left;
+        width:35%;
+    }
 
 
 }
@@ -620,6 +645,10 @@ footer{
         float: left;
         width:100%;
         padding:0;
+    }
+    .card-items{
+        float:left;
+        width:55%;
     }
 }
 /* Media Screen Changes End */
