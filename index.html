@@ -12,9 +12,28 @@
 
 </head>
 <body>
+<!-- Nav Button -->
+<!-- <i id="nav-btn" class="fas fa-bars"></i>
+<nav class="nav-bar">
+    <div class="nav-header">
+        <i id="nav-close-btn" class="fas fa-times"></i>
+    </div>
+    <div class="nav-elements"> 
+        <ul class="nav-items">
+            <li> <a href="#home" class="nav-link"> Home </a></li>
+            <li> <a href="#skills" class="nav-link"> Skills </a> </li>
+            <li> <a href="#about-us" class="nav-link">About Us</a> </li>
+            <li> <a href="#products" class="nav-link">Products</a> </li>
+            <li> <a href="#inquiry" class="nav-link">Inquiry</a> </li>
+            <li> <a href="#socials" class="nav-link">Socials</a> </li>
+        </ul>
+    </div>
+</nav> -->
+<!-- Nav Button End -->
+
+
 <!-- Header -->
-<header class="header">
-    <i id="menu" class="fas fa-bars" style="padding:10px; color: white;"></i>
+<header class="header" id="home">
     <div class="banner">
         <h1 class="flavour-text">Over one hundred flavours of tea</h1>
             <h1 class="crafted-text">Specially Crafted Tea</h1>
@@ -26,7 +45,8 @@
 <div class="content-divider"></div>
 
 <!-- Content -->
-<section class="content clearfix">
+<!-- Skills -->
+<section class="content clearfix" id="skills">
     <article class="made-in-us">
         <i class="fas fa-mug-hot"></i>
         <h1 class="heading head-1">Made in US</h1>
@@ -40,7 +60,8 @@
     <article class="energy">
         <i class="fas fa-bomb"></i>
         <h1 class="heading head-3">Energy</h1>
-        <p class="paragraph para-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maiores.</p>
+        <p class="paragraph para-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maiores.</p>
+
     </article>
     <article class="family-recipe">
         <i class="fas fa-mortar-pestle"></i>
@@ -48,11 +69,15 @@
         <p class="paragraph para-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maiores.</p>
     </article>
 </section>
+<!-- Skills End -->
 
-<section class="content-2">
+<!-- About Us -->
+<section class="content-2" id="about-us">
     <div class="section-center clearfix">
         <article1 class="teapot-image">
-            <img id="teapot-image" src="./about-bcg.jpeg" alt="">
+            <div class="image">
+                <img id="teapot-image" src="./about-bcg.jpeg" alt="">
+            </div>
         </article1>
         <article1 class="about-us">
             <h1 class="about-our">About our</h1>
@@ -65,9 +90,12 @@
         </article1>
     </div>
 </section>
+<!-- About Us End -->
+
+<!-- Products -->
 <section class="content-3">
     <div class="section-center clearfix">
-        <article2 class="checkout-ourproducts">
+        <article2 class="checkout-ourproducts"  id="products">
             <h1 class="checkout-text">Check Out</h1>
             <h1 class="our-products">Our Products</h1>
             <p class="para-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam itaque laboriosam explicabo eius distinctio? Tempore ab excepturi dolorem inventore aliquam.</p>
@@ -95,5 +123,95 @@
         </article2>
     </div>
 </section>
+<!-- Products End -->
+
+<!-- Inquiry -->
+<section class="section-center clearfix" >
+    <div class="address_email_telephone" id="inquiry">
+        <div class="address">
+            <span><i class="fa fa-location-arrow"></i>Address</span>
+            <h4>523 N Fairfax Ave, Los Angeles, CA 90048</h4>
+        </div>
+        <div class="mail">
+            <span><i class="fa fa-location-arrow"></i>Mail</span>
+            <h4>email@email.com</h4>
+        </div>
+        <div class="telephone">
+            <span><i class="fa fa-location-arrow"></i>Telephone</span>
+            <h4>+123 456 789</h4>
+        </div>
+    </div>
+    <div class="form">
+        <h1>Have an inquiry ?</h1>
+        <form class="form-fill">
+            <input type="text" name="name" class="form-control" placeholder="Name">
+            <input type="text" name="email" class="form-control" placeholder="Email">
+            <textarea rows="3" name="message" class="form-control" placeholder="Message"></textarea>
+            <button class="explore-btn-link" type="submit">Send</button>
+        </form>
+    </div>
+</section>
+<!-- Inquiry End -->
+
+<!-- Services -->
+<section class="services">
+        <div class="our-services">
+            <h2>Explore</h2>
+            <h1>Our Services</h1>
+        </div>
+        <div class="cards clearfix">
+            <div class="card-items">
+                <div class="tea-image">
+                    <img src="product-2.jpeg" alt="">
+                </div>
+                <div class="icon">
+                    <i class="fas fa-mug-hot"></i>
+                </div>
+                <div class="captions">
+                    <p>Custom Recipes Service</p>
+                    <button type="submit" class="btn">Read More</button>
+                </div>
+            </div>
+            <div class="card-items">
+                <div class="tea-image">
+                    <img src="./product-1.jpeg" alt="">
+                </div>
+                <div class="icon">
+                    <i class="fas fa-bomb"></i>
+                </div>
+                <div class="captions">
+                   <p>Home Delivery Service</p> 
+                   <button type="submit" class="btn">Read More</button>
+                </div>
+            </div>
+            <div class="card-items">
+                <div class="tea-image">
+                    <img src="./product-3.jpeg" alt="">
+                </div>
+                <div class="icon">
+                    <i class="fas fa-mortar-pestle"></i>
+                </div>
+                <div class="captions">
+                    <p>Tea Aging Service</p>
+                    <button type="submit" class="btn">Read More</button>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- Services End -->
+<!-- Footer -->
+<footer class="footer">
+    <section>
+        <div class="socials-link" id="socials">
+            <a href="http://www.facebook.com" class="facebook"> <i class="fab fa-facebook"></i> </a>
+            <a href="http://instagram.com" class="instagram"> <i class="fab fa-instagram"></i> </a>
+            <a href="https://twitter.com" class="twitter"> <i class="fab fa-twitter"></i> </a>
+        </div>
+        <div class="copyright">
+            <h2> &copy; 2019 <span>Tea Station.</span> All rights reserved </h2>
+        </div>
+    </section>
+</footer>
+<!-- Footer End -->
 </body>
 </html>

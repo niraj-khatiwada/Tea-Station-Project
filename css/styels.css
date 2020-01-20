@@ -31,17 +31,59 @@ a{
 .section-center{
     padding: 5rem 0;
     width: 100vw;
-    max-width: 1080px;
+    /* max-width: 1080px; */
     margin: 0 3rem;
 }
 /* Global End */
+/* Scroll Effect */
 
-#menu{
+
+/* Scroll Effect ENd */
+
+/* Nav  */
+#nav-btn{
     position: fixed;
+    z-index: 1;
+    font-size: 250%;
+    color: var(--primaryColor);
+    padding-left: 10px;
     transition: var(--mainTransition);
     animation: menu-animation 2s infinite linear forwards;
     
 }
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 80vw;
+    bottom: 0;
+    /* z-index: 2; */
+    padding-left: 2rem;
+    background: rgba(0,0,0,0.5);
+
+}
+
+.nav-items{
+    list-style-type: none;
+    line-height: 3rem;
+  
+}
+
+.nav-link{
+    color:var(--primaryColor);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+    transition: var(--mainTransition);
+}
+
+#nav-close-btn{
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+
 /* Menu Animation */
 @keyframes menu-animation {
     0%{
@@ -55,6 +97,7 @@ a{
     }
 }
 
+/* Nav End */
 /* Clear Fixes */
 .clearfix::after, .clearfix::before{
     content: '';
@@ -144,10 +187,11 @@ a{
     outline: 3px solid var(--primaryColor);
     outline-offset: 3px;
     color:saddlebrown;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.4rem;
     transition: var(--mainTransition);
     margin-top: 2rem;
     display: inline-block;
+    font-size: 110%;
 
 }
 
@@ -216,7 +260,7 @@ article:hover .fas{
 
 /* Content-2 */
 
-.teapot-image{
+.image{
     width: 25vw;
     border: 5px solid var(--primaryColor);
     border-radius: 10px;
@@ -230,9 +274,7 @@ article:hover .fas{
     width: 25vw;  
     display: block; 
 }
-.about-us{
-    width: auto;
-}
+
 
 .about-our{
     font-family: var(--secondaryFont);
@@ -247,11 +289,15 @@ article:hover .fas{
     padding: 8px 0;
 }
 
-article1{
+.teapot-image{
     float: left;
-    margin: 0 5rem;
+    width: 25%;
 }
-
+.about-us{
+    float: left;
+    width: 75%;
+    padding-left: 5rem;
+}
 .about-para{
     font-family: var(--primaryFont);
     max-width:25rem;
@@ -296,11 +342,17 @@ article1{
 
 divx{
     float: left;
+    padding: 0 3rem
     
 }
 
-article2{
+.checkout-ourproducts{
     float: left;
+    width: 25%;
+}
+.nested-float{
+    float: left;
+    width: 75%;
 }
 
 divx > h1{
@@ -324,6 +376,192 @@ divx > h4{
 
 
 /* Content-3 End*/
+
+/* Content-4(Last) */
+
+.address_email_telephone, .form{
+    float: left;
+    width: 40%;
+    padding: 0 10rem
+}
+
+.address_email_telephone > div{
+    margin: 3rem 0;
+}
+
+
+.address > span, .mail > span, .telephone > span{
+    color: var(--primaryColor);
+    font-family: var(--secondaryFont);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.address > h4, .mail > h4, .telephone > h4{
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-family: var(--primaryFont);
+    letter-spacing: 2px;
+}
+.form-control{
+    display: block;
+    margin: 0 0 2rem 0;
+    padding: 0.5rem 0;
+    width: 25vw;
+    border: none;
+    border-bottom: 3px solid var(--primaryColor);
+    outline: none;
+    
+}
+
+.form-control::placeholder{
+    color: var(--primaryColor);
+    font-family: var(--primaryFont);
+    font-size: 110%;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.form>h1{
+    color: var(--primaryColor);
+    margin-bottom: 2rem;
+    font-size: 200%;
+    font-weight: lighter;
+    font-family: var(--primaryFont);
+    text-transform: capitalize;
+}
+/* Content-4 End */
+
+
+
+/* Content End */
+
+/* Services */
+
+.services{
+    min-height:100vh;
+}
+
+.our-services{
+    text-align: center;
+}
+
+.our-services > h2{
+    font-family: var(--secondaryFont);
+    color: var(--primaryColor);
+    letter-spacing: 10px;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.our-services > h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: var(--primaryFont);
+}
+
+.cards{
+    margin: 2rem 7rem 5rem 7rem;
+    width: 90vw;
+}
+
+.card-items{
+    float: left;
+    margin: 5rem 3rem;
+    width: 24vw;
+    height: 60vh;
+    outline: 5px solid var(--primaryColor);
+    outline-offset: 0.3rem;
+    -moz-outline-radius: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    
+}
+
+.tea-image{
+    height: 50%;
+}
+
+.tea-image > img{
+    width:24vw ;
+}
+
+.icon{
+    text-align: center;
+    background: red;
+    border-radius: 100%;
+}
+
+.captions{
+    background: var(--primaryColor);
+    height: 50%;
+    text-align: center;
+    padding-top: 7rem;
+}
+
+.captions > p{
+    font-size: 200%;
+    color: white;
+    max-width: 20rem;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.captions > .btn{
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: var(--primaryColor);
+}
+/* Services End */
+/* Footer */
+
+.footer{
+    background: black;
+}
+
+.facebook, .instagram, .twitter{
+    text-decoration: none;
+    font-size: 150%;
+    color: white;
+    padding-right: 1rem;
+}
+
+.copyright{
+    color: white;
+    font-family: var(--primaryFont);
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 75%;
+}
+
+.copyright > h2 > span{
+    color: var(--primaryColor);
+}
+
+.socials-link, .copyright{
+    padding: 1rem 0;
+}
+
+footer{
+    text-align: center;
+}
+
+.socials{
+    padding: 2rem;
+}
+
+.fab:hover{
+    transition: var(--mainTransition);
+    transform: scale(1.5);
+}
+/* Footer End */
+
 /* Media Screen Changes */
 @media screen and (max-width: 1080px){
     .header{
@@ -333,11 +571,13 @@ divx > h4{
         float: left;
         width: 50%;
     }
-    article1{
+    .teapot-image, .about-us{
         float:left;
-        margin:2rem 2rem;
+        width: 50%;
+        padding:0;
+        margin:1rem 2rem;
     }
-    article2{
+    .checkout-ourproducts, .nested-float{
         float: left;
         width: 100%;
     }
@@ -347,6 +587,12 @@ divx > h4{
     .nested-images{
         padding: 5rem 0; 
     }
+    .address_email_telephone, .form{
+        float: left;
+        width:50%;
+        padding:0;
+    }
+
 
 }
 
@@ -365,12 +611,15 @@ divx > h4{
     }
     divx{
         float: left;
+        padding:0;
     }
     .nested-images{
         padding: 5rem 0; 
     }
+    .address_email_telephone, .form{
+        float: left;
+        width:100%;
+        padding:0;
+    }
 }
 /* Media Screen Changes End */
-
-
-/* Content End */
