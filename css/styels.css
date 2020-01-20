@@ -612,10 +612,12 @@ footer{
         float: left;
         width:50%;
         padding:0;
+        margin: 0;
     }
     .card-items{
         float:left;
         width:35%;
+        margin: 1rem;
     }
 
 
@@ -645,10 +647,12 @@ footer{
         float: left;
         width:100%;
         padding:0;
+        margin: 0;
     }
     .card-items{
         float:left;
         width:55%;
+        margin: 1rem;
     }
 }
 /* Media Screen Changes End */
